@@ -17,7 +17,7 @@ public class Client {
 			out = new PrintWriter(cSocket.getOutputStream(), true);
 
 			while (true) {
-				System.out.println("ÇëÊäÈë×Ö·û´®:");
+				System.out.println("Ã‡Ã«ÃŠÃ¤ÃˆÃ«Ã—Ã–Â·Ã»Â´Â®:");
 				Scanner scanner = new Scanner(System.in);
 				String str = scanner.nextLine();
 				out.println(str);
