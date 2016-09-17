@@ -6,12 +6,12 @@ import java.io.*;
 public class Server extends Thread {
 	static ServerSocket serverSocket = null;
 	Socket userSocket;
-	static int user = 1;//¿Í»§¶Ë±àºÅ
+	static int user = 1;//å®¢æˆ·ç«¯ç¼–å·
 	int ID;
 
-	private Server(Socket userSoc) {//²úÉúÒ»¸öĞÂµÄ¿Í»§¶Ë
+	private Server(Socket userSoc) {//äº§ç”Ÿä¸€ä¸ªæ–°çš„å®¢æˆ·ç«¯
 		ID = user++;
-		System.out.println("ÓÃ»§ " + ID + " ÒÑ¾­ÉÏÏß");
+		System.out.println("ç”¨æˆ· " + ID + " å·²ç»ä¸Šçº¿");
 		userSocket = userSoc;
 	}
 
@@ -28,7 +28,7 @@ public class Server extends Thread {
 				if (inputLine.equals("bye"))
 					break;
 				sb = new StringBuffer(inputLine);
-					out.println("¶ÔÃæËµ:" + sb.reverse().toString());
+					out.println("å¯¹é¢è¯´:" + sb.reverse().toString());
 					//System.out.println(inputLine);
 			}
 			in.close();
@@ -48,7 +48,7 @@ public class Server extends Thread {
 
 			}
 		} catch (IOException e) {
-			System.out.println("·şÎñÖÕÖ¹£º" + e);
+			System.out.println("æœåŠ¡ç»ˆæ­¢ï¼š" + e);
 			System.exit(1);
 		}
 
