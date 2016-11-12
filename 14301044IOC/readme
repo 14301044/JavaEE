@@ -1,0 +1,7 @@
+整个项目里面 
+1.5个包（bean，factory，resource，test，util）是在老师给出的代码里面实现了依赖注入
+  包括A依赖B，B又依赖C的传递的依赖
+  配置见beans.xml文件
+2.另外一个包（annotation）包是实现autowired和component两个注解的列子
+  里面有测试类（test），实现了只需要从configAnnotation.xml里面读取包名名
+  通过两个注解来自动注入bean和依赖关系
