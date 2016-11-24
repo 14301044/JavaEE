@@ -1,0 +1,3 @@
+在aop.support里面有我实现的ProxyFactoryBean
+我的xml比给的xml多了一个<bean id="advisor">可以达到给指定方法代理的效果
+但是因为基于之前自己写的IOC框架所以并没有改变读取XML的代码 所以只能针对一个方法名，感觉实际应该是namelist
