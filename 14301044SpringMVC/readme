@@ -1,3 +1,5 @@
-暂时只实现了doget的请求
+实现了doget的请求
 http://localhost:8080/JavaSpringMVC/calculateController/add.do?a=1&b=100后面的参数可以任意改动
-jsp响应doget请求还没实现
+实现了dopost的请求
+http://localhost:8080/JavaSpringMVC/add.jsp
+所有controller的方法都由DispatchServlet拦截
